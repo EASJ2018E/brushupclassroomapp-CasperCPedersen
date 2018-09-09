@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassRoom
 {
-    class Studerende
+    public class Studerende
     {
         public string Name { get; set; }
 

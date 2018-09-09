@@ -18,7 +18,14 @@ namespace ClassRoom
             TestKlasse.KlasseList.Add(Casper);
             Studerende Søren = new Studerende("Søren",1,1);
             TestKlasse.KlasseList.Add(Søren);
-
+            Console.WriteLine($"KlasseNavn:{TestKlasse.KlasseNavn}");
+            Console.WriteLine($"SemesterStart:{TestKlasse.SemesterStart}");
+            Console.WriteLine("Klassliste:");
+            foreach (var studerende in TestKlasse.KlasseList)
+            {
+                Console.WriteLine($"Navn:{studerende.Name}. FødeslsDag:{studerende.FødeslsDag}. FødeslsMåned:{studerende.FødeslsMåned}.");
+            }
+            Console.ReadLine();
         }
     }
 }
